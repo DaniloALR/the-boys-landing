@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+.ceo{
+    padding: 10vw 0;
+    text-align: center;
+    
+
+    &__list{
+        list-style: none;
+
+        &__item{
+            display: none;
+            
+            &--is-active{
+                display: block;
+            }
+
+            img{
+                max-height: 450px;
+                height: 100%;
+            }
+
+            p{
+                margin: 15px 0;
+            }
+        }
+    }
+}

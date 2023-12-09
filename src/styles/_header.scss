@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 24px 0;
+    background-color: variaveis.$backgroundColor;
+    z-index: 1;
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+        gap: 15px;
+
+        &__item{
+            
+            a{
+                text-decoration: none;
+                color: variaveis.$corTextoPrincipal;
+                font-size: 20px;
+
+                &:hover{
+                    border-bottom: 3px solid variaveis.$corTextoPrincipal;
+                    transition: border-bottom .1s ease;
+                }
+            }
+        }
+    }
+}

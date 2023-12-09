@@ -1,0 +1,19 @@
+@use 'variaveis';
+
+.home{
+    text-align: center;
+    padding-top: calc(50vh - 145px);
+    padding-bottom: 50vh;
+
+    &__bgimage{
+        max-width: 850px;
+    }
+
+    &__title{
+
+        &__arrow{
+            height: 60px;
+        }
+    }
+
+}

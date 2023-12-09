@@ -1,0 +1,78 @@
+@use 'variaveis';
+
+.the-seven{
+    padding: 10vw 0;
+
+    &__resumo{
+        margin-bottom: 10vw;
+    }
+
+    &__list{
+
+        &__item{
+            position: relative;
+            display: none;
+
+            img{
+                max-width: 100%;
+            }
+
+            &--is-active{
+                display:block;
+            }
+
+            ::-webkit-scrollbar{
+                width: 4px;
+                background: transparent;
+            }
+            ::-webkit-scrollbar-track{
+                background-color: rgba(0,0,0,0.5);
+            }
+            ::-webkit-scrollbar-thumb{
+                border-radius: 6px;
+                background: variaveis.$backgroundColorLighten;            
+            }
+
+            &__content{
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 380px;
+                max-height: 570px;
+                overflow-y: scroll;
+                box-shadow: 5px 5px 45px 4px #000000;
+                    
+                p{
+                    background-color: rgba(0,0,0,0.5);
+                    padding: 10px;
+                }
+            }
+        }
+        
+    }
+
+    h2{
+        margin-bottom: 40px;
+    }
+    .tabs{
+        &__container{
+            max-width: 750px;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+        &__btn{
+            margin-bottom: 4px;
+        }
+        ::-webkit-scrollbar{
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track{
+            
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius: 6px;
+            background: variaveis.$backgroundColorLighten;
+        }
+    }
+}

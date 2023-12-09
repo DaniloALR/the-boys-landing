@@ -1,0 +1,87 @@
+@use 'variaveis';
+@use 'header';
+@use 'home';
+@use 'resumo';
+@use 'vought';
+@use 'ceo';
+@use 'the-seven';
+@use 'the-boys';
+@use 'footer';
+
+@font-face{
+    font-family: Amazon Ember;
+    src: url(../../assets/fonts/Amazon\ Ember.ttf);
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Amazon Ember, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.title--big{
+    font-size: 40px;
+    color: variaveis.$corTextoPrincipal;
+    text-align: center;
+}
+
+.title--small{
+    font-size: 35px;
+    color: variaveis.$corTextoPrincipal;
+    text-align: center;
+}
+
+.text{
+    font-size: 26px;
+    color: variaveis.$corTextoSecundario;
+    text-align: center;
+}
+
+.text--small{
+    font-size: 20px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+body{
+    background-color: variaveis.$backgroundColor;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 2vw;
+
+    &__btn{
+        padding: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        background:none;
+        border: none;
+        color: variaveis.$corTextoPrincipal;
+        transition: all .3s ease;
+
+            &:hover{
+                font-size: 26px;
+                transition: all .3s ease;
+            }
+
+        &--is-active{
+            border-bottom: 3px solid variaveis.$corTextoPrincipal;
+        }
+    }
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
