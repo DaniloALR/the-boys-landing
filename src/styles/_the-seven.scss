@@ -46,6 +46,42 @@
                     background-color: rgba(0,0,0,0.5);
                     padding: 10px;
                 }
+
+            }
+        }
+        @media(max-width:1024px){
+            &__item{
+                ::-webkit-scrollbar-track{
+                    background-color: transparent;
+                }
+                img{
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+                &__content{
+                    max-width: 614px;
+                    position: inherit;
+                    box-shadow: none;
+
+                    p{
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        @media(max-width:767px){
+            &__item{
+                ::-webkit-scrollbar-track{
+                    background-color: transparent;
+                }
+                img{
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+                &__content{
+                    position: inherit;
+                }
             }
         }
         

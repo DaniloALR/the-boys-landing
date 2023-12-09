@@ -33,4 +33,34 @@
             }
         }
     }
+
+    @media(max-width: 1024px){
+        position: inherit;
+        overflow-x: hidden;
+
+        &__logo{
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        &__list{
+            justify-content: center;
+        }
+    }
+
+    @media(max-width: 767px){
+        position: inherit;
+        overflow-x: hidden;
+
+        &__logo{
+            height: 55px;
+            margin-bottom: 20px;
+            padding-left: 38vw;
+        }
+        &__container{
+            display: block;
+        }
+        &__list{
+            justify-content: center;
+        }
+    }
 }

@@ -29,23 +29,42 @@ html{
     font-size: 40px;
     color: variaveis.$corTextoPrincipal;
     text-align: center;
+
+    @media(max-width:767px){
+        font-size: 36px;
+    }
 }
 
 .title--small{
     font-size: 35px;
     color: variaveis.$corTextoPrincipal;
     text-align: center;
+
+    @media(max-width:767px){
+        font-size: 31px;
+    }
 }
 
 .text{
     font-size: 26px;
     color: variaveis.$corTextoSecundario;
     text-align: center;
+
+    @media(max-width:767px){
+        font-size: 22px;
+
+        max-height: 300px;
+        overflow-y: scroll;
+    }
 }
 
 .text--small{
     font-size: 20px;
     color: variaveis.$corTextoPrincipal;
+
+    @media(max-width:767px){
+        font-size: 16px;
+    }
 }
 
 body{
@@ -75,6 +94,14 @@ body{
         &--is-active{
             border-bottom: 3px solid variaveis.$corTextoPrincipal;
         }
+
+        @media(max-width:768px){
+            font-size: 20px;
+            &:hover{
+                font-size: 22px;
+                transition: all .3s ease;
+            }
+        }
     }
 }
 
@@ -82,6 +109,14 @@ body{
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+
+    @media(max-width:1024px){
+        max-width: 80%;
+    }
+    @media(max-width:767px){
+        max-width: 80%;
+    }
+
 }
 
 
